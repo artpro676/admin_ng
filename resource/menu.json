@@ -1,0 +1,59 @@
+[
+ {
+  "title" : "Article",
+  "id" : "article",
+  "order" : 1,
+  "url" : "#",
+  "icon" : "list-alt",
+  "child" : [
+   {
+    "title" : "Create new",
+    "id" : "create-new",
+    "order" : 1,
+    "url" : "#",
+    "icon" : "",
+   },
+   {
+    "title" : "View article",
+    "id" : "view-article",
+    "order" : 1,
+    "url" : "#",
+    "icon" : "",
+   },
+
+  ]
+
+ },
+ {
+  "title" : "Comments",
+  "id" : "comments",
+  "order" : 2,
+  "url" : "#",
+  "icon" : "pencil",
+  "child" : [
+   {
+    "title" : "Approved",
+    "id" : "approved",
+    "order" : 1,
+    "url" : "#",
+    "icon" : "",
+   },
+   {
+    "title" : "Unapproved",
+    "id" : "unapproved",
+    "order" : 1,
+    "url" : "#",
+    "icon" : "",
+   },
+
+  ]
+
+ },
+ {
+  "title" : "Tags",
+  "id" : "tags",
+  "order" : 3,
+  "url" : "#",
+  "icon" : "tags",
+ }
+]
