@@ -140,7 +140,7 @@ background-color: #293846;
 	width: 35px;
 }
 #admin-footer{
-	position: absolute;
+	position:;
 	width:100%;
 	bottom: 0px;
 	background-color: #fff;
@@ -202,4 +202,8 @@ height: 35px
     position: absolute;
     top: -6px;
     left: 10px;
+}
+#userTable{
+	position: relative;
+	background-color: #ffffff;
 }
