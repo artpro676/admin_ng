@@ -21,7 +21,8 @@ var app = angular.module('admin', ['ngRoute'])
       templateUrl: 'templates/viewarticle.html'
     })
     .when('/users', {
-      templateUrl: 'templates/users.html'
+      templateUrl: 'templates/users.html',
+        controller:'usersController'
     })
     .when('/settings', {
       templateUrl: 'templates/settings.html'
@@ -29,4 +30,10 @@ var app = angular.module('admin', ['ngRoute'])
     .otherwise('/dashboard', {
       templateUrl: 'templates/dashboard.html'
     });
+}]);
+
+app.controller('usersController',['$scope','$http',function(scope,http){
+  http.get('resource/users.json').success(function(data){
+    scope.users = data;
+  });
 }]);
