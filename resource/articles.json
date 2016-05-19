@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "title": "firstArticle",
+    "content": "html code",
+    "date": "20.05.2016 13:00",
+    "owner_id": "1",
+    "status": "published"
+
+  },
+  {
+    "id": "2",
+    "title": "secondArticle",
+    "content": "html code",
+    "date": "21.05.2016 14:00",
+    "owner_id": "2",
+    "status": "published"
+
+  },
+  {
+    "id": "3",
+    "title": "thirdArticle",
+    "content": "html code",
+    "date": "22.05.2016 17:00",
+    "owner_id": "3",
+    "status": "published"
+
+  },
+  {
+    "id": "4",
+    "title": "fourthArticle",
+    "content": "html code",
+    "date": "24.05.2016 19:00",
+    "owner_id": "4",
+    "status": "published"
+
+  },
+  {
+    "id": "5",
+    "title": "fifthArticle",
+    "content": "html code",
+    "date": "27.05.2016 09:00",
+    "owner_id": "5",
+    "status": "published"
+
+  }
+]
