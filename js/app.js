@@ -37,23 +37,41 @@ var app = angular.module('admin', ['ngRoute'])
     });
 }]);
 
-app.controller('usersController',['$scope','$http','$location',function(scope,http,location){
-  http.get('resource/users.json').success(function(dataUsers){
-    scope.users = dataUsers;
+app.controller('usersController',['$scope','$http','$location',function($scope,$http,$location){
+  $http.get('resource/users.json').success(function(data){
+    $scope.users = data;
+    $scope.addNewUser = function(){
+      $scope.users.push({
+        userName: $scope.newUserName,
+        city: $scope.newUserCity
+
+      });
+      $scope.newUserName = "";
+      $scope.newUserCity = "";
+    };
   });
 }]);
 
-app.controller('articleController',['$scope','$http','$location',function(scope,http){
-  http.get('resource/articles.json').success(function(dataArticles){
-    scope.articles = dataArticles;
+app.controller('articleController',['$scope','$http','$location',function($scope,$http,$location){
+  $http.get('resource/articles.json').success(function(data){
+    $scope.articles = data;
 
 });
 }]);
 
-app.controller('viewArticleController',['$scope','$http','$location','$routeParams', function($scope,$http,$routeParams,$location){
-$scope.articleId = $routeParams.articleId;
-  var url = 'resource/articles.json';
-  $http.get(url).success(function(data){
-    $scope.article = data;
-  });
+app.controller('viewArticleController',['$scope','$http','$location','$routeParams', function($scope,$http,$routeParams){
+    $scope.content = $routeParams.articleId;
+ var url = 'resource/articles.json';
+ $http.get(url).success(function(data){
+     $scope.articles = data;
+ });
+
 }]);
+
+app.directive('userForm', function(){
+  return{
+    restrict:'E',
+    templateUrl:"directives/user-form.html"
+  };
+});
+

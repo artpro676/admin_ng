@@ -17,7 +17,7 @@ html,body{
 	text-align: left;
 }
 #side-menu li a{
-	padding: 12px 20px;
+	padding: 12px 22px;
 	text-decoration: none;
 	color:#9fb1c2; 
 	font-weight: bold;
@@ -31,7 +31,10 @@ html,body{
 	display: block;
 	color: #fff;
 }
-#side-menu.dashboard .dashboard{
+.active-a{
+	color:#fff!important;
+}
+.active {
 background-color: #293846;
 }
 #side-menu .glyphicon{
@@ -73,9 +76,10 @@ background-color: #293846;
 }
 .display-table{
 	display: table;
-	padding: 0px;
+	padding: 0;
 	height: 100%;
 	width:100%;
+	min-height: 100%;
 }
 .display-table-row{
 	display: table-row;
@@ -140,13 +144,16 @@ background-color: #293846;
 	width: 35px;
 }
 #admin-footer{
-	position:absolute;
 	width:100%;
-	bottom: 0px;
+	bottom: 0;
 	background-color: #fff;
 	padding: 10px;
 	font-size: 12px;
 	color:#676a6c;
+	margin-top: 20px;
+}
+.footer{
+	clear: both;
 }
 .navbar-default{
 background-color: #fff;
@@ -184,26 +191,10 @@ height: 35px
 }
 
 
-#nav-header .dropdown-menu:before {
-  	display: inline-block;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-bottom: 7px solid #ccc;
-    border-bottom-color: rgba(0, 0, 0, 0.2);
-    position: absolute;
-    top: -7px;
-    left: 9px;
-}
-#nav-header .dropdown-menu:after {
-    display: inline-block;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-bottom: 6px solid #fff;
-    position: absolute;
-    top: -6px;
-    left: 10px;
-}
 #userTable{
 	position: relative;
 	background-color: #ffffff;
+}
+#article-lable{
+	margin-left:4px;
 }

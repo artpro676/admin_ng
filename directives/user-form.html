@@ -1,0 +1,30 @@
+<div class="row">
+
+    <div class="col-md-4">
+        <h2>Add new Users</h2>
+        <form name="userForm" novalidate>
+            <input type="text" class="form-control"  placeholder="Enter your name" ng-model="newUserName" required> <br>
+            <input class="form-control" placeholder="Enter your city" ng-model="newUserCity" required> <br>
+            <button ng-click="addNewUser()" type="button"  class="btn btn-success">Add User</button>
+        </form>
+    </div>
+    <div class="col-md-6"></div>
+</div>
+
+<h1>Now you have{{users.length}} users</h1>
+<table class="table table-bordered" id="userTable">
+    <thead>
+    <tr>
+        <th>First Name</th>
+        <th>City</th>
+        <th>id</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="user in users">
+        <td>{{user.userName}}</td>
+        <td>{{user.city}}</td>
+        <td>{{user.id}}</td>
+    </tr>
+    </tbody>
+</table>
